@@ -9,8 +9,8 @@
   --header-button-hover:#666CA3;
   --hero-button: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
   --hero-button-hover:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-  --footer-button:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-  --footer-button-hover:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+  --footer-button:linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+  --footer-button-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 
 /* FONTS FACE */
@@ -123,7 +123,7 @@ ul{
   font-weight: bold;
   color: var(--bg-color);
 }
-
+/* button-header */
 .button--header{
   background-color: var(--heading-color);
   transition: background-color 0.4s ease;
@@ -131,7 +131,7 @@ ul{
 .button--header:hover{
   background-color: var(--header-button-hover);
 }
-
+/* button-hero */
 .button--hero {
   padding: 19px 32px 16px;
   border-radius: 31px;
@@ -140,6 +140,13 @@ ul{
 
 .button--hero:hover{
   background: var(--hero-button-hover);
+}
+/* button-footer */
+.button--footer{
+  background: var(--footer-button);
+}
+.button--footer:hover{
+  background: var(--footer-button-hover);
 }
 
 /* CONTAINER */
@@ -172,7 +179,17 @@ ul{
 .site-header__logo {
   display: inline-block;
   margin-right: 45px;
+  transition: opacity 0.4s ease;
 }
+
+.site-header__logo:hover{
+  opacity: 0.8;
+}
+
+.site-header__logo:active{
+  opacity: 0.6;
+}
+
 .logo {
   display: inline-block;
 }
@@ -281,6 +298,23 @@ ul{
   font-weight: 700;
   color: var(--accent-color);
   margin-top: auto;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer__logo {
+  margin-left: 45px;
 }
 
 
