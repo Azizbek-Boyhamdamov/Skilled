@@ -122,6 +122,7 @@ ul{
   border: none;
   font-weight: bold;
   color: var(--bg-color);
+  cursor: pointer;
 }
 /* button-header */
 .button--header{
