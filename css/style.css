@@ -84,6 +84,38 @@ img{
   height: auto;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* BUTTON */
+
+.button{
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  padding: 14px 32px;
+  border-radius: 28px;
+  border: none;
+  font-weight: bold;
+  color: var(--bg-color);
+}
+
+.button--header{
+  background-color: var(--heading-color);
+  transition: background-color 0.4s ease;
+}
+.button--header:hover{
+  background-color: var(--header-button-hover);
+}
+
 /* CONTAINER */
 .container{
   width: 100%;
@@ -98,6 +130,34 @@ img{
 .main-content{
   flex-grow: 1;
 }
+
+/* SITE-HEADER */
+
+.site-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--bg-color);
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__logo {
+  display: inline-block;
+  margin-right: 45px;
+}
+.logo {
+  display: inline-block;
+}
+.logo__image {
+  display: block;
+  width: 111px;
+  height: 27px;
+  object-fit: contain;
+}
+
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
