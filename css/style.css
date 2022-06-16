@@ -77,6 +77,9 @@ body{
   font-family:'Plus Jakarta Sans', "Arial", sans-serif;
   background-color: #fff;
   color: var(--text-color);
+  background-image: url("../img/hero_bg_image.svg");
+  background-repeat: no-repeat;
+  background-position:calc(50% + 563px) -144px ;
 }
 
 img{
@@ -93,6 +96,19 @@ ul{
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* BUTTON */
@@ -116,6 +132,16 @@ ul{
   background-color: var(--header-button-hover);
 }
 
+.button--hero {
+  padding: 19px 32px 16px;
+  border-radius: 31px;
+  background: var(--hero-button);
+}
+
+.button--hero:hover{
+  background: var(--hero-button-hover);
+}
+
 /* CONTAINER */
 .container{
   width: 100%;
@@ -136,7 +162,6 @@ ul{
 .site-header {
   padding-top: 24px;
   padding-bottom: 24px;
-  background-color: var(--bg-color);
 }
 .site-header__container {
   display: flex;
@@ -157,6 +182,34 @@ ul{
   height: 27px;
   object-fit: contain;
 }
+
+/* HERO */
+
+.hero {
+  padding-top: 160px;
+  padding-bottom: 226px;
+}
+
+.hero__content {
+  width: 457px;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 71px;
+  color: var(--heading-color);
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
 
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
