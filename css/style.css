@@ -1,3 +1,58 @@
+
+/* CUSTOM PROPS */
+
+:root{
+  --bg-color:#fff;
+  --heading-color:#13183F;
+  --text-color:#83869A;
+  --accent-color:#f74780;
+  --header-button-hover:#666CA3;
+  --hero-button: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  --hero-button-hover:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  --footer-button:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  --footer-button-hover:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+/* FONTS FACE */
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-Bold.woff2') format('woff2'),
+      url('../fonts/PlusJakartaSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
+      url('../fonts/PlusJakartaSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+      url('../fonts/PlusJakartaSans-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('PlusJakartaSans-Regular.woff2') format('woff2'),
+      url('PlusJakartaSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 /* GLOBAL */
 html{
   box-sizing: border-box;
@@ -17,11 +72,11 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-family:'Plus Jakarta Sans', "Arial", sans-serif;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 img{
