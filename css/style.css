@@ -203,12 +203,18 @@ ul{
 /* HERO */
 
 .hero {
+
   padding-top: 160px;
   padding-bottom: 226px;
 }
 
 .hero__content {
+
   width: 457px;
+}
+
+.hero__container{
+  position: relative;
 }
 
 .hero__heading {
@@ -226,6 +232,36 @@ ul{
   font-weight: 500;
   color: var(--text-color);
 }
+
+.hero__course-time-info,
+.hero__course-member-info {
+  position: absolute;
+  top: 258px;
+  right: 300px;
+  padding: 20px 72px 19px 24px;
+  background-color: var(--bg-color);
+  box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
+  border-radius: 15px;
+}
+.hero__course-time ,
+.hero__course-member{
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+.hero__course-time-hour,
+.hero__course-member-count  {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--heading-color);
+}
+.hero__course-member-info {
+  top: 20px;
+  right: -7px;
+}
+
 
 /* FEATURES */
 
@@ -306,6 +342,7 @@ ul{
 .site-footer {
   padding-top: 32px;
   padding-bottom: 32px;
+  background-color: var(--heading-color);
 }
 .site-footer__container {
   display: flex;
